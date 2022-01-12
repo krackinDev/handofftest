@@ -1,0 +1,37 @@
+{
+	"name": "TenantBudget_adf_ff",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "adeFinancialForecasting",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureDataExplorerTable",
+		"schema": [
+			{
+				"name": "TenantId",
+				"type": "guid"
+			},
+			{
+				"name": "Amount",
+				"type": "real"
+			},
+			{
+				"name": "Year",
+				"type": "int"
+			},
+			{
+				"name": "Month",
+				"type": "int"
+			},
+			{
+				"name": "Date",
+				"type": "int"
+			}
+		],
+		"typeProperties": {
+			"table": "TenantBudget"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

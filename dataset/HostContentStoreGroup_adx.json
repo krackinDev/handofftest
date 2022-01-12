@@ -1,0 +1,16 @@
+{
+	"name": "HostContentStoreGroup_adx",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "adeFileTracking",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureDataExplorerTable",
+		"schema": [],
+		"typeProperties": {
+			"table": "HostContentGroup"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

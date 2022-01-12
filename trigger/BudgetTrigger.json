@@ -1,0 +1,25 @@
+{
+	"name": "BudgetTrigger",
+	"properties": {
+		"description": "Triggers every 2 mins",
+		"annotations": [],
+		"runtimeState": "Stopped",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "FinanceForecasting_Budgets",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "ScheduleTrigger",
+		"typeProperties": {
+			"recurrence": {
+				"frequency": "Minute",
+				"interval": 15,
+				"startTime": "2022-01-05T21:30:00Z",
+				"timeZone": "UTC"
+			}
+		}
+	}
+}

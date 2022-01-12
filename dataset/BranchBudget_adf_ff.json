@@ -1,0 +1,16 @@
+{
+	"name": "BranchBudget_adf_ff",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "adeFinancialForecasting",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureDataExplorerTable",
+		"schema": [],
+		"typeProperties": {
+			"table": "BranchBudgetConfiguration"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

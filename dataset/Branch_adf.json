@@ -1,0 +1,16 @@
+{
+	"name": "Branch_adf",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "adeFileTracking",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureDataExplorerTable",
+		"schema": [],
+		"typeProperties": {
+			"table": "Branch"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

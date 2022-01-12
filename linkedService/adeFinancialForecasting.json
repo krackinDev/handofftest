@@ -1,0 +1,12 @@
+{
+	"name": "adeFinancialForecasting",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureDataExplorer",
+		"typeProperties": {
+			"endpoint": "https://junoctader1prod.eastus.kusto.windows.net",
+			"database": "FinancialForecasting"
+		}
+	}
+}

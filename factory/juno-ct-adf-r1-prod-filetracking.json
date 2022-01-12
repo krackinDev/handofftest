@@ -1,0 +1,9 @@
+{
+	"name": "juno-ct-adf-r1-prod-filetracking",
+	"location": "westus2",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "2af66d8a-a34e-4be9-935d-e7b150a4ad39",
+		"tenantId": "975f013f-7f24-47e8-a7d3-abc4752bf346"
+	}
+}

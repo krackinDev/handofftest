@@ -1,0 +1,32 @@
+{
+	"name": "daily trigger",
+	"properties": {
+		"description": "Run the copy of tables once a day.",
+		"annotations": [],
+		"runtimeState": "Stopped",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "File-Tracking",
+					"type": "PipelineReference"
+				}
+			},
+			{
+				"pipelineReference": {
+					"referenceName": "Finanicial-Forecasting",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "ScheduleTrigger",
+		"typeProperties": {
+			"recurrence": {
+				"frequency": "Hour",
+				"interval": 8,
+				"startTime": "2021-08-30T20:33:00Z",
+				"endTime": "2023-12-31T17:28:00Z",
+				"timeZone": "UTC"
+			}
+		}
+	}
+}

@@ -1,0 +1,56 @@
+{
+	"name": "BranchBudget_Sql",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Forecasting",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "Id",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "TenantId",
+				"type": "varchar"
+			},
+			{
+				"name": "BranchId",
+				"type": "varchar"
+			},
+			{
+				"name": "BudgetTypeId",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Amount",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "Year",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Month",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Date",
+				"type": "int",
+				"precision": 10
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "BranchBudgets"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
